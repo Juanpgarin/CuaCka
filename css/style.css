@@ -3,7 +3,7 @@ body {
 }
 
 .navbar {
-  background-color: #b9e2c1;
+  background-color:rgba(116, 145, 91, 0.3);
   border-radius: 15px;
   padding: 10px 0;
   display: flex;
@@ -12,34 +12,34 @@ body {
   z-index: 1;
 }
 
-/* Contenedor interno */
 .navbar-inner {
   width: 100%;
   max-width: 1200px;
   display: flex;
-  justify-content: space-between;  /* separa los 2 grupos */
+  justify-content: space-between;
   align-items: center;
   position: relative;
-  padding: 0 80px; /* margen interno desde bordes */
+  padding: 0 80px; 
 }
 
-/* Grupos */
-.navbar-left, .navbar-right {
+
+.navbar-left,
+.navbar-right {
   display: flex;
-  gap: 60px;  /* espacio entre botones */
+  gap: 60px;  
   align-items: center;
 }
 
 /* ====== BOTONES NORMALES ====== */
 .navbar-button {
-  background-color:#74915b;
+  background-color: #74915b;
   color: #f7ee8f;
-  padding: 15px;  
+  padding: 15px;
   border: 2px solid #f7ee8f;
   border-radius: 20px;
   text-decoration: none;
   font-family: 'Baloo 2', cursive;
-  font-weight: 700;  /* bold */
+  font-weight: 700; 
   font-size: 18px;
   transition: 0.3s;
   cursor: pointer;
@@ -53,23 +53,26 @@ body {
 /* ====== BOTÓN CENTRAL (HOME) ====== */
 .home-button {
   position: absolute;
-  top: -10px;   /* lo saca de la barra */
+  top: -10px;
+  /* lo saca de la barra */
   left: 50%;
   transform: translateX(-50%);
-  z-index: 2;  
+  z-index: 2;
   border-radius: 50%;
-  padding: 15px;  
+  padding: 15px;
 }
 
 .home-icon {
   width: 150px;
   height: auto;
   display: block;
-  transition: all 0.3s ease;  /* animación suave */
+  transition: all 0.3s ease;
+  /* animación suave */
 }
 
 .home-button:hover .home-icon {
-  transform: scale(1.15);  /* agranda el logo */
+  transform: scale(1.15);
+  /* agranda el logo */
 }
 
 /* ====== DROPDOWN ====== */
@@ -85,7 +88,7 @@ body {
   left: -25%;
   background-color: #f7ee8f;
   min-width: 160px;
-  box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
   border-radius: 8px;
   z-index: 3;
 }
@@ -109,17 +112,94 @@ body {
   display: block;
 }
 
-.logo-hero {
-  width: 100%;
-  height: auto;
-  max-width: 500px; /* Ajusta el tamaño máximo */
-  display: block;
-  margin: 30px 20px auto; 
-  cursor: pointer;
+/*                                                 HERO                                                              */
+.hero {
+  display: flex;
+  align-items: center;    
+  gap: 80px;  
+  max-width: 1200px;  
+  margin: 80px auto;  
+  padding: 0 20px;
 }
 
-.logo-hero:hover {
-  transform: scale(1.10);   
-  transition: transform 0.5s ease; 
+logo-hero {
+  max-width: 400px;
+  height: auto;
+  flex-shrink: 0;    
+  
+}
 
+.textohero {
+  background-color: rgba(247, 238, 143, 0.5);
+  border-radius: 10px;
+  max-width: 500px;  
+  font-family: 'Baloo 2', cursive;
+}
+
+.textohero h1 {
+  font-size: 2  rem;
+  text-align: center;
+  color: #74915b;
+}
+.textohero p {
+  text-align: end;
+  font-size: 1.1rem;
+  font-weight: 500;
+  line-height: 1.2; 
+  padding: 0 15px 15px 15px;
+}
+
+
+
+/* //                                                        FOOTER                                                // */
+
+.footer {
+  background-color:rgba(116, 145, 91, 0.3);
+  color: #333;
+  padding: 40px 20px 20px;
+  font-family: 'Baloo 2', cursive;
+  margin-top: 50px;
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-section h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #5a7a5a;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin: 8px 0;
+}
+
+.footer-section ul li a {
+  text-decoration: none;
+  color: #555;
+  transition: 0.3s;
+}
+
+.footer-section ul li a:hover {
+  color: #74915b; /* verde más oscuro */
+  font-weight: bold;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 14px;
+  border-top: 1px solid #a0c7b0;
+  padding-top: 15px;
+  color: #444;
 }

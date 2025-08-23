@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../../css/style.css">
 </head>
+
 <body>
 
   <nav class="navbar">
@@ -41,7 +43,7 @@
     </div>
   </nav>
 
- <!--   <a href="#" class="home-button">
+  <!--   <a href="#" class="home-button">
     <img src="../../img/boton-home.png" alt="Home" class="home-icon">
   </a>
  -->
@@ -65,12 +67,39 @@
     </div>
   </main>
 
-  <!-- Footer -->
   <footer class="footer">
     <div class="footer-container">
-      <!-- ... igual al index ... -->
+      <!-- Columna 1 -->
+      <div class="footer-section">
+        <h3>Sobre Nosotros</h3>
+        <p>Las opiniones, reseñas, vivencias y consejos
+          compartidos en este portal son de exclusiva
+          responsabilidad de quienes los emiten y no
+          necesariamente reflejan la posición de CuaCka.
+        <p><strong>La información aquí presentada NO sustituye la consulta con profesionales de la salud.🦆</strong>
+        </p>
+      </div>
+
+      <div class="footer-section">
+        <h3>Contacto</h3>
+        <p>Email: <a href="mailto:hola@recetas.com">hola@recetas.com</a></p>
+        <p>Instagram: <a href="#">@recetas_cuack</a></p>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2025 CuaCka. Todos los derechos reservados 🦆</p>
     </div>
   </footer>
-
+  <div id="visorLibro" class="modal">
+    <span class="cerrar">&times;</span>
+    <div class="modal-content">
+      <button class="nav-btn prev">&lt;</button>
+      <img id="paginaLibro" src="" alt="Página del libro">
+      <button class="nav-btn next">&gt;</button>
+    </div>
+  </div>
+  <script src="../../js/script.js"></script>
 </body>
+
 </html>

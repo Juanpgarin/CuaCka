@@ -19,3 +19,19 @@ function actualizarHome(){
 
 document.addEventListener("DOMContentLoaded", actualizarHome);
 window.addEventListener("resize", actualizarHome);
+
+
+document.querySelectorAll('.reseña-card').forEach(card => {
+  const btn = card.querySelector('.toggle-btn');
+  const detalle = card.querySelector('.detalle');
+
+  btn.addEventListener('click', () => {
+    if (detalle.style.display === 'block') {
+      detalle.style.display = 'none';
+      btn.textContent = 'Ver más';
+    } else {
+      detalle.style.display = 'block';
+      btn.textContent = 'Ver menos';
+    }
+  });
+});
